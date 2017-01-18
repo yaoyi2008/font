@@ -7,8 +7,8 @@
 
 ```
 import logging
-import font
-font.init()
+import fontcolor
+fontcolor.init()
 
 logging.debug('DEBUG')
 logging.info('INFO')
