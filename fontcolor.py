@@ -8,6 +8,27 @@ import ctypes
 import logging
 import os
 
+'''
+usage:
+
+In your New py file header, insert them
+---------------code start-------------
+
+import logging
+import fontcolor
+fontcolor.init()
+
+# output examples
+
+logging.debug('DEBUG')
+logging.info('INFO')
+logging.warning('WARNING')
+logging.error('ERROR')
+logging.critical('CRITICAL')
+
+---------------code end---------------
+'''
+
 class ColorizingStreamHandler(logging.StreamHandler):
     # color names to indices
     color_map = {
@@ -145,4 +166,4 @@ def init():
     # logging.critical('CRITICAL')
 
 # if __name__ == '__main__':
-#     main()
+#     init()
